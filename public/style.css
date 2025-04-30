@@ -1,0 +1,125 @@
+@import "tailwindcss";
+
+html {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+body {
+  font-size: 1rem;
+}
+
+p {
+  font-weight: lighter;
+}
+
+.splide {
+  margin-left: calc(100vw / 12);
+}
+
+/* Animation scroll down */
+@keyframes blink {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.3;
+  }
+}
+.blinking {
+  animation: blink 2s infinite;
+}
+
+/* Hide scrollbar */
+.hide-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+/* Smartphone */
+@media (max-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+
+  h3 {
+    font-size: 2rem;
+  }
+
+  p {
+    font-size: 1rem;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 992px) {
+  html {
+    font-size: 18px;
+  }
+
+  h3 {
+    font-size: 2rem;
+  }
+
+  p {
+    font-size: 1rem;
+  }
+}
+
+/* Schermi ultrawide */
+@media (min-width: 993px) and (max-width: 1420px) {
+  html {
+    font-size: 22px;
+  }
+
+  h3 {
+    font-size: 2rem;
+  }
+
+  p {
+    font-size: 1rem;
+  }
+}
+
+@media (min-width: 1421px) and (max-width: 1920px) {
+  html {
+    font-size: 24px;
+  }
+
+  h3 {
+    font-size: 2rem;
+  }
+
+  p {
+    font-size: 1rem;
+  }
+}
+
+@media (min-width: 1921px) and (max-width: 2400px) {
+  html {
+    font-size: 35px;
+  }
+
+  h3 {
+    font-size: 2rem;
+  }
+
+  p {
+    font-size: 1rem;
+  }
+}
+
+@media (min-width: 2401px) {
+  html {
+    font-size: 45px;
+  }
+
+  h3 {
+    font-size: 2rem;
+  }
+
+  p {
+    font-size: 1rem;
+  }
+}
